@@ -1,2 +1,3 @@
-# code-style
-Code style guide
+# Code Style
+
+A code style guide
