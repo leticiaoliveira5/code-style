@@ -1,5 +1,6 @@
 require:
   - rubocop-rails
+  - rubocop-rspec
 
 AllCops:
   TargetRubyVersion: 3.0.0
@@ -7,10 +8,15 @@ AllCops:
   SuggestExtensions: false
   Exclude:
     - 'bin/**/*'
-    - 'vendor/**/*'
     - 'db/**/*'
     - 'config/**/*'
     - 'node_modules/**/*'
+    - config/
+    - vendor/
+    - bin/
+    - app/assets/javascripts/
+
+# Style
 
 Style/Documentation:
   Enabled: false
@@ -18,15 +24,54 @@ Style/Documentation:
 Style/FrozenStringLiteralComment:
   Enabled: false
 
+# Layout
+
 Layout/TrailingEmptyLines:
   Enabled: true
 
-Metrics/BlockLength:
-  IgnoredMethods: ['describe', 'context', 'feature', 'scenario', 'let']
+Layout/MultilineMethodCallIndentation:
+  Enabled: false
+
+Layout/ParameterAlignment:
+  EnforcedStyle: with_fixed_indentation
+
+Layout/IndentationStyle:
+  Enabled: true
+
+Layout/TrailingWhitespace:
+  Enabled: true
+
+# Metrics
+
+Metrics/BlockNesting:
+  Max: 4
+
+Metrics/ClassLength:
+  Max: 250
 
 Metrics/MethodLength:
   Max: 15
+  IgnoredMethods: ['describe', 'context', 'feature', 'scenario', 'let']
 
-Metrics/LineLength:
+Metrics/ModuleLength:
+  Max: 250
+
+Layout/LineLength:
   Max: 100
-  
+
+# Rspec
+
+RSpec/ContextWording:
+  Enabled: false
+
+RSpec/ExampleLength:
+  Max: 7
+
+RSpec/MultipleExpectations:
+  Max: 3
+
+# Other
+
+Bundler/OrderedGems:
+  Enabled: true
+
