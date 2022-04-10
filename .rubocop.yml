@@ -74,3 +74,7 @@ RSpec/MultipleExpectations:
 
 Bundler/OrderedGems:
   Enabled: true
+  
+RSpec/Capybara/CurrentPathExpectation:
+  Enabled: false
+
