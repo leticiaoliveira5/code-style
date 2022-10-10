@@ -24,6 +24,9 @@ Style/Documentation:
 Style/FrozenStringLiteralComment:
   Enabled: false
 
+Style/BlockComments:
+  Enabled: false
+
 # Layout
 
 Layout/TrailingEmptyLines:
