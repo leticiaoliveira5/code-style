@@ -79,6 +79,9 @@ RSpec/MultipleExpectations:
   
 RSpec/EmptyLineAfterExample:
   Enabled: false
+  
+RSpec/NamedSubject:
+  Enabled: false
 
 # Other
 
