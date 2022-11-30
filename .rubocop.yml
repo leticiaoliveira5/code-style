@@ -54,11 +54,11 @@ Metrics/ClassLength:
 
 Metrics/MethodLength:
   Max: 15
-  AllowedMethods: ['describe', 'context', 'feature', 'scenario', 'let']
+  IgnoredMethods: ['describe', 'context', 'feature', 'scenario', 'let']
   
 Metrics/BlockLength:
   Max: 25
-  AllowedMethods: ['describe', 'context', 'feature', 'scenario', 'let']
+  IgnoredMethods: ['describe', 'context', 'feature', 'scenario', 'let']
 
 Metrics/ModuleLength:
   Max: 250
