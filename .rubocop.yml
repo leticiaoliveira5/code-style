@@ -58,7 +58,7 @@ Metrics/MethodLength:
   
 Metrics/BlockLength:
   Max: 25
-  IgnoredMethods: ['describe', 'context', 'feature', 'scenario', 'let']
+  IgnoredMethods: ['describe', 'context', 'feature', 'scenario', 'let', 'define']
 
 Metrics/ModuleLength:
   Max: 250
