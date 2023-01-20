@@ -11,10 +11,10 @@ AllCops:
     - 'db/**/*'
     - 'config/**/*'
     - 'node_modules/**/*'
-    - config/
+    - 'config/'
     - 'vendor/**/**/*'
-    - bin/
-    - app/assets/javascripts/
+    - 'bin/'
+    - 'app/assets/javascripts/'
 
 # Style
 
@@ -23,7 +23,7 @@ Style/Documentation:
 
 Style/FrozenStringLiteralComment:
   Enabled: false
-
+  
 Style/BlockComments:
   Enabled: false
 
