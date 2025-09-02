@@ -92,7 +92,7 @@ RSpec/NamedSubject:
 Bundler/OrderedGems:
   Enabled: true
   
-RSpec/Capybara/CurrentPathExpectation:
+Capybara/CurrentPathExpectation:
   Enabled: false
 
 RSpec/Capybara/FeatureMethods:
