@@ -11,9 +11,8 @@ AllCops:
     - 'db/**/*'
     - 'config/**/*'
     - 'node_modules/**/*'
-    - 'vendor/**/**/*'
-    - bin/
-    - app/assets/javascripts/
+    - 'vendor/**/*'
+    - 'app/assets/javascripts/**/*'
 
 # Style
 
